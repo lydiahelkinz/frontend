@@ -4,17 +4,17 @@
 
 export type TransactionStats = {
   __typename: "TransactionStats",
-  totalCount: number,
-  totalAmount: number,
-  fraudCount: number,
-  totalFraudAmount: number,
+  totalCount?: number,
+  totalAmount?: number,
+  fraudCount?: number,
+  totalFraudAmount?: number,
 };
 
 export type Transaction = {
   __typename: "Transaction",
-  id: string,
-  amount: number,
-  timestamp?: number | null,
+  id?: string,
+  amount?: number,
+  timestamp?: number,
   productCD?: string | null,
   card1?: string | null,
   card2?: string | null,
@@ -28,7 +28,7 @@ export type Transaction = {
   dist2?: string | null,
   pEmaildomain?: string | null,
   rEmaildomain?: string | null,
-  isFraud: boolean,
+  isFraud?: boolean,
 };
 
 export type GetTransactionStatsQueryVariables = {
@@ -56,7 +56,7 @@ export type GetFraudTransactionsQuery = {
     __typename: "Transaction",
     id: string,
     amount: number,
-    timestamp?: number | null,
+    timestamp: number,
     productCD?: string | null,
     card1?: string | null,
     card2?: string | null,
