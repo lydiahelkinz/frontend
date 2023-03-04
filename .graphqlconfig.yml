@@ -1,5 +1,5 @@
 projects:
-  FraudDetectionDashboardAPI:
+  appsync-test-rtfd:
     schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.ts
@@ -10,8 +10,8 @@ projects:
         codeGenTarget: typescript
         generatedFileName: src/API.ts
         docsFilePath: src/graphql
-        region: ap-northeast-1
-        apiId: 7ztaetnhejdornfimuapudchne
+        region: eu-west-3
+        apiId: xlms62myovd3tdrnvr7fztkave
         maxDepth: 2
 extensions:
   amplify:
